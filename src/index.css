@@ -12,13 +12,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.contact-button {
-  border-radius: 5px;
-  margin-bottom: 8px;
-}
-
-.contact-button:hover,
-.contact-button:focus {
-  background-color: rgb(88, 194, 255);
-}

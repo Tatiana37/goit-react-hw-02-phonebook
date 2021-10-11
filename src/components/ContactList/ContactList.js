@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Contact from '../Contact/Contact';
-
+import s from './ContactList.module.css';
 function ContactList({ contacts, onDeleteContact }) {
   return (
     <ul>
@@ -8,7 +8,7 @@ function ContactList({ contacts, onDeleteContact }) {
         <li key={id}>
           <Contact name={name} number={number} />
           <button
-            className="contact-button"
+            className={s.contactBtn}
             type="button"
             onClick={() => onDeleteContact(id)}
           >
