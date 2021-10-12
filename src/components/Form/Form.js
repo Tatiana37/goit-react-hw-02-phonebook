@@ -22,11 +22,12 @@ class Form extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const { name, number } = this.state;
-    const obj = {
+    const contact = {
+      id: shortid.generate(),
       name,
       number,
     };
-    this.props.onSubmit(obj);
+    this.props.onSubmit(contact);
     this.reset();
   };
 

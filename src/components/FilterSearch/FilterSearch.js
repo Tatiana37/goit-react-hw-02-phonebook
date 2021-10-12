@@ -11,7 +11,7 @@ function FilterSearch({ filter, onChange }) {
         name="name"
         value={filter}
         onChange={onChange}
-      ></input>
+      />
     </div>
   );
 }
